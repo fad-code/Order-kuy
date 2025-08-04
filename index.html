@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Orders</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order</title>
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Smythe&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <!-- HEADER -->
+    <header class="header">
+      <img src="images/burgerheading.png" alt="Header" class="header-img" />
+    </header>
+
+    <!-- MENU -->
+    <main class="menu-list">
+      <!-- Item 1 -->
+      <div class="menu-item">
+        <img src="images/pizza.png" alt="Pizza" class="item-img" />
+        <div class="item-info">
+          <h2>Pizza</h2>
+          <p class="desc">pepperoni, mushroom, mozarella</p>
+          <p class="price">$14</p>
+        </div>
+        <button class="add-btn" data-name = "Pizza" data-price ="14">+</button>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="menu-item">
+        <img src="images/burger.png" alt="Hamburger" class="item-img" />
+        <div class="item-info">
+          <h2>Hamburger</h2>
+          <p class="desc">beef, cheese, lettuce</p>
+          <p class="price">$12</p>
+        </div>
+        <button class="add-btn" data-name="Hamburger" data-price="12">+</button>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="menu-item">
+        <img src="images/beer.png" alt="Beer" class="item-img" />
+        <div class="item-info">
+          <h2>Beer</h2>
+          <p class="desc">grain, hops, yeast, water</p>
+          <p class="price">$12</p>
+        </div>
+        <button class="add-btn" data-name="Beer" data-price="12">+</button>
+      </div>
+    </main>
+     <!-- CHECKOUT SECTION -->
+    <section class="checkout hidden" id="checkout-section">
+      <h3 class="checkout-title">Your order</h3>
+      <div id="checkout-items-container"></div>
+      <hr class="divider" />
+      <div class="total-section">
+        <span class="total-text">Total price:</span>
+        <span class="total-price" id="total-price">$0</span>
+      </div>
+      <button id="complete-btn" class="complete-btn">Complete order</button>
+    </section>
+    <!-- SUCCESS MESSAGE -->
+    <div id="order-success" class="order-success hidden">
+      <p>Thanks, James! Your order is on its way!</p>
+    </div>
+</div>
+<script src="index.js" type="module"></script>
+</body>
+</html>

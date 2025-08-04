@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Smythe', cursive;
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* HEADER */
+.header-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* MENU */
+.menu-list {
+  margin-top: 32px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d2d2d2;
+  padding: 16px 0;
+  gap: 16px;
+}
+
+.item-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-info h2 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.desc {
+  font-size: 14px;
+  color: #8b8b8b;
+  line-height: 20px;
+}
+
+.price {
+  font-size: 16px;
+  margin-top: 6px;
+  color: #000;
+}
+
+.add-btn {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border: 1.5px solid #dedede;
+  background: transparent;
+  border-radius: 50%;
+  color: #3c3c3c;
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* CHECKOUT */
+.hidden {
+  display: none;
+}
+
+.checkout {
+  margin-top: 32px;
+  padding: 24px 0;
+  border-top: 2px solid #393333;
+}
+
+.checkout-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 16px;
+  color: #000;
+}
+
+/* Item list */
+.checkout-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.item-name {
+  font-size: 20px;
+}
+
+.remove-btn {
+  font-size: 12px;
+  font-family: 'Verdana', sans-serif;
+  color: #BBBBBB;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.item-price {
+  font-size: 18px;
+}
+
+/* Total section */
+.total-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.total-text {
+  font-size: 22px;
+  color: #0E0E0E;
+}
+
+.total-price {
+  font-size: 18px;
+  color: #0E0E0E;
+}
+
+/* Button */
+.complete-btn {
+  width: 100%;
+  height: 52px;
+  background: #16DB99;
+  color: white;
+  font-family: 'Verdana', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  margin-top: 24px;
+  cursor: pointer;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* ========== RESPONSIVE DESKTOP / TABLET ========== */
+@media (min-width: 601px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .menu-item {
+    gap: 24px;
+    padding: 24px 0;
+  }
+
+  .item-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .item-info h2 {
+    font-size: 26px;
+  }
+
+  .desc {
+    font-size: 16px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .add-btn {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+  }
+
+  .checkout-title {
+    font-size: 28px;
+  }
+
+  .checkout-item {
+    margin: 16px 0;
+  }
+
+  .item-name {
+    font-size: 24px;
+  }
+
+  .item-price {
+    font-size: 20px;
+  }
+
+  .total-text {
+    font-size: 26px;
+  }
+
+  .total-price {
+    font-size: 20px;
+  }
+
+  .complete-btn {
+    height: 60px;
+    font-size: 18px;
+  }
+}
+
+/* Success */
+
+.order-success {
+  background-color: #ecfdf5;
+  color: #065f46;
+  font-family: 'Smythe', cursive;
+  font-size: 20px;
+  text-align: center;
+  padding: 24px;
+  margin-top: 24px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
